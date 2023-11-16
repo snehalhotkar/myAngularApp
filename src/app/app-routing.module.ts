@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { EditComponent } from './user-list/edit/edit.component';
+import { AddComponent } from './user-list/add/add.component';
 
 const routes: Routes = [
   {
@@ -10,8 +11,12 @@ const routes: Routes = [
   },
   { path: '', redirectTo: 'userlist', pathMatch: 'full' },
   {
+    path: 'userlist/add',
+    component: AddComponent,
+  },
+  {
     path: 'userlist/:id',
-    component: EditComponent
+    component: EditComponent,
   },
 ];
 
