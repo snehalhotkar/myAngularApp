@@ -1,0 +1,17 @@
+th {
+    width: 20px;
+    height: 20px;
+}
+
+.img-fluid {
+    width: 50%;
+}
+
+.container-fluid {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* .progress {
+    height: 50%;
+} */
