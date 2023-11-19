@@ -5,7 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class GlobalServiceService {
-  constructor(private http: HttpClient) {}
+  apiurl: any;
+  constructor(private http: HttpClient) {
+    this.apiurl = 'http://localhost:8100/'; // local url
+    // this.apiurl = 'https://dealmony.api.com/'; // prod url
+  }
 
   headers() {
     const httpOptions = new HttpHeaders({});

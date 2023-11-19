@@ -9,7 +9,6 @@
             <table class="table table-striped table-hover border my-3">
                 <thead>
                     <tr>
-                        <th>Profile Image</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
@@ -19,10 +18,6 @@
                 </thead>
                 <tbody *ngFor="let uL of userList">
                     <tr>
-                        <td>
-                            <img class="img-fluid m-0 p-0" src="{{uL.profile_image_url}}"
-                                style=" width: 40%; height:40px;">
-                        </td>
                         <td>
                             <span style="color:gray">{{uL.first_name}}</span>
                         </td>

@@ -17,8 +17,11 @@ export class UserListComponent implements OnInit {
     private http: HttpClient,
     private router: Router,
     public globalService: GlobalServiceService
-  ) {}
+  ) {
+    console.log('her aim gggggggggggggggg');
+  }
   ngOnInit(): void {
+    console.log('her aim ');
     const url: string = 'http://localhost:8100/users/userlist';
     this.globalService.getRequest(url).subscribe((res: any) => {
       console.log(res);

@@ -1,1 +1,62 @@
-<p>add works!</p>
+<div class="row p-3">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                Add User
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" class="form-control" id="name" required [(ngModel)]="first_name"
+                                name="first_name">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" class="form-control" id="name" required [(ngModel)]="last_name"
+                                name="last_name">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="name" required [(ngModel)]="email" name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="mobile_number">Mobile Number</label>
+                            <input type="text" class="form-control" id="name" required [(ngModel)]="mobile_number"
+                                name="mobile_number">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div *ngIf="isError" class="alert alert-danger">
+                                {{isErrorMessage}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div *ngIf="isSuccess" class="alert alert-success">
+                                {{isSuccessMessage}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer text-muted">
+                <button type="button" class="btn btn-primary float-left" (click)="submit()">Add user</button>
+            </div>
+        </div>
+    </div>
+</div>
