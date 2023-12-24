@@ -20,7 +20,7 @@ export class EditComponent {
   id: any;
   register_date: any;
   submitted: boolean = false;
-  myReactiveForm !: FormGroup;
+  myReactiveForm : FormGroup;
 
 
 
@@ -33,11 +33,11 @@ export class EditComponent {
 
   ) {
     this.myReactiveForm = this.fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', Validators.required],
-      mobileNumber: ['', Validators.required],
-      registerDate: ['', Validators.required]
+      firstName: ['', Validators.required]
+      // lastName: ['', Validators.required],
+      // email: ['', Validators.required],
+      // mobileNumber: ['', Validators.required],
+      // registerDate: ['', Validators.required]
 
     });
 

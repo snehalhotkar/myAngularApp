@@ -38,13 +38,13 @@
 
 <div class="row justify-content-center">
     <div class="col-md-4">
-        <form [formGroup]="myReactiveForm" (ngSubmit)="onUpdate">
+        <form [FormGroup]="myReactiveForm" (ngSubmit)="onUpdate">
             <h2 class=" d-flex justify-content-center">Update Details</h2>
             <div class="mb-3">
                 <label for="firstName" class="form-group">First Name</label>
                 <input type="text" class="form-control" formControlName="firstName">
-                <div *ngIf="myReactiveForm.firstName.invalid && myReactiveForm.firstName.touched">
-                    <small class="text-danger" *ngIf="myReactiveForm.firstName.errors?.required">Please enter the name!</small>
+                <div *ngIf="myReactive?.firstName.invalid && myReactive.firstName.touched">
+                    <small class="text-danger" *ngIf="myReactive.['firstName'].['required']">Please enter the name!</small>
                 </div>
             </div>
             <div class="mb-3">
